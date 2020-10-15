@@ -1,0 +1,114 @@
+<?xml version='1.0'?>
+<JobDefinition>
+  <Comment />
+  <Description>All_Scheduled_Jobs</Description>
+  <Name>All_Scheduled_Jobs</Name>
+  <Partition type="Partition" path="Test_Partition_2016" />
+  <ParentApplication type="Application" path="GLOBAL.Redwood.GLOBAL.Report.$2" />
+  <EquivalentObject>false</EquivalentObject>
+  <CriticalProcess>false</CriticalProcess>
+  <KeepForce>false</KeepForce>
+  <KeepAmount>30</KeepAmount>
+  <KeepUnits>Days</KeepUnits>
+  <KeepType />
+  <KeepJobsInStatus />
+  <MinimumOpenDurationExpression />
+  <Overdue>false</Overdue>
+  <OverdueStatus />
+  <OverviewFormat />
+  <Priority />
+  <MaxPriority>100</MaxPriority>
+  <RestartCount />
+  <ReturncodeMapToCompleted />
+  <HoldOnSubmit>false</HoldOnSubmit>
+  <TopLevel>true</TopLevel>
+  <Template>false</Template>
+  <Maintenance>false</Maintenance>
+  <ReactionJobType />
+  <EvaluationOwnerType>SystemDefault</EvaluationOwnerType>
+  <OverdueEventDefinition />
+  <DefaultOutputFormat />
+  <JobDefinitionType type="JobDefinitionType" path="GLOBAL.Report" />
+  <DefaultLogFormat />
+  <DefaultQueue />
+  <Resource />
+  <TimeWindow />
+  <TimeWindowTimeZone />
+  <JobTimeZone />
+  <ActionSubject />
+  <CategoryProcessTag />
+  <JobDefinitionParameter>
+    <Comment />
+    <Description>ReportFormat</Description>
+    <Name>OutputFormat</Name>
+    <DataLength />
+    <DataPrecision />
+    <DataScale />
+    <DataType>String</DataType>
+    <DefaultExpression><![CDATA[CSV]]></DefaultExpression>
+    <DefaultValueEditable />
+    <Direction>In</Direction>
+    <SimpleConstraintType>None</SimpleConstraintType>
+    <SimpleConstraintData />
+    <SimpleConstraintMessage />
+    <SimpleConstraintOptional>false</SimpleConstraintOptional>
+    <SimpleConstraintSort>Ascending</SimpleConstraintSort>
+    <Display>true</Display>
+    <Password>false</Password>
+    <DisplayOrder>2</DisplayOrder>
+    <Editable>Always</Editable>
+    <GroupName />
+    <PartOfKey>false</PartOfKey>
+    <Nullable>false</Nullable>
+    <Runtime>false</Runtime>
+    <JobFormat />
+    <Array>false</Array>
+    <ArrayMinLength>0</ArrayMinLength>
+    <ArrayMaxLength />
+    <ArrayDuplicateValuesAllowed>false</ArrayDuplicateValuesAllowed>
+    <ArraySorted>false</ArraySorted>
+    <ParameterMappingType>Normal</ParameterMappingType>
+  </JobDefinitionParameter>
+  <Report>
+    <Query><![CDATA[select j.JobDefinition, j.ScheduledStartTime, j.Queue, j.Status from Job j where j.Status = 'S']]></Query>
+    <Limit>99999</Limit>
+    <ReportQueryType>SQL</ReportQueryType>
+    <QueryFilter />
+    <ReportColumn>
+      <Comment />
+      <Description />
+      <Name>Job.JobDefinition</Name>
+      <Display>true</Display>
+      <ColumnFormat>Formatted</ColumnFormat>
+      <Value>Job.JobDefinition</Value>
+      <ColumnOrder>0</ColumnOrder>
+    </ReportColumn>
+    <ReportColumn>
+      <Comment />
+      <Description />
+      <Name>Job.ScheduledStartTime</Name>
+      <Display>true</Display>
+      <ColumnFormat>Formatted</ColumnFormat>
+      <Value>Job.ScheduledStartTime</Value>
+      <ColumnOrder>1</ColumnOrder>
+    </ReportColumn>
+    <ReportColumn>
+      <Comment />
+      <Description />
+      <Name>Job.Queue</Name>
+      <Display>true</Display>
+      <ColumnFormat>Formatted</ColumnFormat>
+      <Value>Job.Queue</Value>
+      <ColumnOrder>2</ColumnOrder>
+    </ReportColumn>
+    <ReportColumn>
+      <Comment />
+      <Description />
+      <Name>Job.Status</Name>
+      <Display>true</Display>
+      <ColumnFormat>Formatted</ColumnFormat>
+      <Value>Job.Status</Value>
+      <ColumnOrder>3</ColumnOrder>
+    </ReportColumn>
+  </Report>
+</JobDefinition>
