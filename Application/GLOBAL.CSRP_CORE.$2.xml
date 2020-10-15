@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<Application>
+  <Comment />
+  <Description>CSRP_CORE</Description>
+  <Name>CSRP_CORE</Name>
+  <Partition type="Partition" path="GLOBAL" />
+  <ParentApplication />
+</Application>
