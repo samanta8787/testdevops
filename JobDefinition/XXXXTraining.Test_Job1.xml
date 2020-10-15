@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<JobDefinition>
+  <Comment />
+  <Description />
+  <Name>Test_Job1</Name>
+  <Partition type="Partition" path="XXXXTraining" />
+  <ParentApplication />
+  <EquivalentObject>false</EquivalentObject>
+  <CriticalProcess>false</CriticalProcess>
+  <KeepForce>false</KeepForce>
+  <KeepAmount />
+  <KeepUnits />
+  <KeepType />
+  <KeepJobsInStatus />
+  <MinimumOpenDurationExpression />
+  <Overdue>false</Overdue>
+  <OverdueStatus />
+  <OverviewFormat />
+  <Priority />
+  <MaxPriority>100</MaxPriority>
+  <RestartCount />
+  <ReturncodeMapToCompleted />
+  <HoldOnSubmit>false</HoldOnSubmit>
+  <TopLevel>true</TopLevel>
+  <Template>false</Template>
+  <Maintenance>false</Maintenance>
+  <ReactionJobType />
+  <EvaluationOwnerType>SystemDefault</EvaluationOwnerType>
+  <OverdueEventDefinition />
+  <DefaultOutputFormat />
+  <JobDefinitionType type="JobDefinitionType" path="GLOBAL.BASH" />
+  <DefaultLogFormat />
+  <DefaultQueue type="Queue" path="GLOBAL.PSBU_Queue_Utility" />
+  <Resource />
+  <TimeWindow />
+  <TimeWindowTimeZone />
+  <JobTimeZone />
+  <ActionSubject />
+  <CategoryProcessTag />
+  <JobDefinitionRaiseEvent>
+    <ErrorCode />
+    <RaiseComment><![CDATA[Event raised by process:${jobid} (${jobdescription}) being set to status ${jobstatus}]]></RaiseComment>
+    <StatusToRaiseOn>Killed</StatusToRaiseOn>
+    <EventDefinition type="EventDefinition" path="PSBU_Partition_BusinessJob.E_CLEANUP_TRIGGER" />
+  </JobDefinitionRaiseEvent>
+  <Script>
+    <Source><![CDATA[echo Test1
+sleep 40
+echo Test2]]></Source>
+    <RunAsUser />
+    <RemoteRunAsUser />
+    <Library type="Library" path="GLOBAL.None" />
+  </Script>
+</JobDefinition>
