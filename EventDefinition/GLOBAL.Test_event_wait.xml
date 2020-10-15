@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<EventDefinition>
+  <Comment />
+  <Description>Even wait test</Description>
+  <Name>Test_event_wait</Name>
+  <Partition type="Partition" path="GLOBAL" />
+  <ParentApplication type="Application" path="GLOBAL.TALEND_TEST.$2" />
+  <RequiresCommentOnRaise>true</RequiresCommentOnRaise>
+  <DefaultRaiseComment>event raised</DefaultRaiseComment>
+  <RequiresCommentOnClear>true</RequiresCommentOnClear>
+  <DefaultClearComment>event cleared</DefaultClearComment>
+</EventDefinition>
