@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<JobLock>
+  <Comment />
+  <Description>LK_Devops_test_lock</Description>
+  <Name>LK_Devops_test_lock</Name>
+  <Partition type="Partition" path="Devops_partition" />
+  <ParentApplication type="Application" path="Devops_partition.Test_Devops.$2" />
+  <LockType>Simple</LockType>
+  <Held>false</Held>
+  <MaxCount>1</MaxCount>
+  <HeldByJob />
+</JobLock>
