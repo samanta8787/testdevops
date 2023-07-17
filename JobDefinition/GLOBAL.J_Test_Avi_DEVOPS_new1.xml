@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<JobDefinition>
+  <Comment />
+  <Description>J_Test_Avi_DEVOPS_new1</Description>
+  <Name>J_Test_Avi_DEVOPS_new1</Name>
+  <Partition type="Partition" path="GLOBAL" />
+  <ParentApplication type="Application" path="GLOBAL.Redwood.$2" />
+  <EquivalentObject>false</EquivalentObject>
+  <CriticalProcess>false</CriticalProcess>
+  <Discarded>false</Discarded>
+  <KeepForce>false</KeepForce>
+  <KeepAmount />
+  <KeepUnits />
+  <KeepType />
+  <KeepJobsInStatus />
+  <KeepInStatusAmount />
+  <KeepInStatusUnit />
+  <MinimumOpenDurationExpression />
+  <Overdue>false</Overdue>
+  <OverdueStatus />
+  <OverviewFormat />
+  <Priority />
+  <MaxPriority>100</MaxPriority>
+  <RestartCount />
+  <ReturncodeMapToCompleted />
+  <HoldOnSubmit>false</HoldOnSubmit>
+  <TopLevel>true</TopLevel>
+  <Template>false</Template>
+  <Maintenance>false</Maintenance>
+  <ReactionJobType />
+  <EvaluationOwnerType>SystemDefault</EvaluationOwnerType>
+  <CompletionStrategy>Default</CompletionStrategy>
+  <OverdueEventDefinition />
+  <DefaultOutputFormat />
+  <JobDefinitionType type="JobDefinitionType" path="GLOBAL.BASH" />
+  <DefaultLogFormat />
+  <DefaultQueue type="Queue" path="GLOBAL.System" />
+  <Resource />
+  <TimeWindow />
+  <TimeWindowTimeZone />
+  <JobTimeZone />
+  <RELRelatedLibrary />
+  <ActionSubject />
+  <JobDefinitionRuntimeLimit>
+    <Comment />
+    <Description />
+    <Name>Maximum</Name>
+    <ERTPlusOrMinusType>Plus</ERTPlusOrMinusType>
+    <MaxMinType>Maximum</MaxMinType>
+    <LimitValue>40000</LimitValue>
+    <LimitExpression />
+    <LimitType>Fixed</LimitType>
+    <CalculatedLimitType>Percent</CalculatedLimitType>
+    <KillJob>true</KillJob>
+    <EventDefinition />
+    <AdHocAlertSource />
+  </JobDefinitionRuntimeLimit>
+  <Script>
+    <Source><![CDATA[echo test123
+
+echo test345]]></Source>
+    <RunAsUser />
+    <RemoteRunAsUser />
+    <Library type="Library" path="GLOBAL.None" />
+  </Script>
+</JobDefinition>
